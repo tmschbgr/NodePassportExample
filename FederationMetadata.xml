@@ -1,0 +1,276 @@
+<EntityDescriptor ID="b247c348-7e5b-44de-a96e-d98aa7b7ba0a" entityID="ofis:pwc:broker:s" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+  <Organization>
+    <OrganizationDisplayName xml:lang="">Optimal IdM, LLC</OrganizationDisplayName>
+    <OrganizationName xml:lang="">Optimal IdM, LLC</OrganizationName>
+    <OrganizationURL xml:lang="">http://support.optimalidm.com/</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="support">
+    <Company>Optimal IdM, LLC</Company>
+    <GivenName>Optimal IdM Support</GivenName>
+    <SurName>Optimal IdM Support</SurName>
+    <EmailAddress>Support@optimalidm.com</EmailAddress>
+    <TelephoneNumber>813-425-6351</TelephoneNumber>
+  </ContactPerson>
+  <RoleDescriptor xsi:type="fed:ApplicationServiceType" protocolSupportEnumeration="http://docs.oasis-open.org/wsfed/federation/200706" ServiceDisplayName="OptimalIdM.VIS.Federation.STS" ServiceDescription="OptimalIdM.VIS.Federation.STS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706">
+    <fed:PassiveRequestorEndpoint>
+      <wsa:EndpointReference xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Address>https://fedsvc-stage.pwc.com/ofiss/</wsa:Address>
+      </wsa:EndpointReference>
+    </fed:PassiveRequestorEndpoint>
+    <KeyDescriptor use="encryption">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIC5TCCAc2gAwIBAgIQHMHScLtAPKhNJL8oEadDqDANBgkqhkiG9w0BAQUFADAaMRgwFgYDVQQDEw9PRklTU2lnbmluZ0NlcnQwHhcNMTQwODI3MTM0NTIzWhcNMjAwMjE3MTM0NTIzWjAaMRgwFgYDVQQDEw9PRklTU2lnbmluZ0NlcnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3CUhZzRVxThfD6smcRASzZVN9Itjwvsj+4KyjFqgioTnyc1fo2CszWDOVEP4KJb0Qb7KnDneq3E7yK9uXV9WV7HCyOOtqIxfD4jrGBBy89NmyzFQy7HRumFvSORXOWHmGUK+UT/wyZsYYhq1gAsuuZdrGWVrffaI1Oo+/WpoGh7bhLcHADINiWbHO1YC2YnGgzjlJpWz7fN2bn1oQhBplOHcEOLBl6Kl7Qg447Zl71EVHT1uTmw+uQYp95+23xauZkT6nMl9QgOprqwp71ftB6zqVNyWcswwHNtcLYH86Je7ab1V+SGmqrj7ko/zCUuLpNG4byxPPvKXC9YBX8BPvAgMBAAGjJzAlMBMGA1UdJQQMMAoGCCsGAQUFBwMBMA4GA1UdDwQHAwUAsAAAADANBgkqhkiG9w0BAQUFAAOCAQEAUjysm0FgiYnqvEE7mXPMV5yP3MxQ8hppEgRChSr43WfBrWotEJiAzJLWYJsyHCKyVZakGpVkW2GqqzClicnrldJAlUUl89ZLoUlQeGjEK+dKbeERWrOqwsjt8xG1acaupcuCOYAdwTC58Hfg+f+yZKW6cPR+VdBFssPsvv5VRt/3SfrtBv23f9J971NHCsVY+DR03qlfaVAktAJsh2rGCNLpCKCeN/TFANSMtF46otIRTa4jbS0OFiBBnWo5lL9ovpnFraDGQ9fCYzUkfd02BSj6ZLgJeqQPL99uxI/VO53HYx7xABM9yxyOQDY7PGJRvaEtC/8UZ7KC4bSzQhxXnw==</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+  </RoleDescriptor>
+  <RoleDescriptor xsi:type="fed:SecurityTokenServiceType" protocolSupportEnumeration="http://docs.oasis-open.org/wsfed/federation/200706" ServiceDisplayName="OptimalIdM.VIS.Federation.STS" ServiceDescription="OptimalIdM.VIS.Federation.STS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706">
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIC5TCCAc2gAwIBAgIQHMHScLtAPKhNJL8oEadDqDANBgkqhkiG9w0BAQUFADAaMRgwFgYDVQQDEw9PRklTU2lnbmluZ0NlcnQwHhcNMTQwODI3MTM0NTIzWhcNMjAwMjE3MTM0NTIzWjAaMRgwFgYDVQQDEw9PRklTU2lnbmluZ0NlcnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3CUhZzRVxThfD6smcRASzZVN9Itjwvsj+4KyjFqgioTnyc1fo2CszWDOVEP4KJb0Qb7KnDneq3E7yK9uXV9WV7HCyOOtqIxfD4jrGBBy89NmyzFQy7HRumFvSORXOWHmGUK+UT/wyZsYYhq1gAsuuZdrGWVrffaI1Oo+/WpoGh7bhLcHADINiWbHO1YC2YnGgzjlJpWz7fN2bn1oQhBplOHcEOLBl6Kl7Qg447Zl71EVHT1uTmw+uQYp95+23xauZkT6nMl9QgOprqwp71ftB6zqVNyWcswwHNtcLYH86Je7ab1V+SGmqrj7ko/zCUuLpNG4byxPPvKXC9YBX8BPvAgMBAAGjJzAlMBMGA1UdJQQMMAoGCCsGAQUFBwMBMA4GA1UdDwQHAwUAsAAAADANBgkqhkiG9w0BAQUFAAOCAQEAUjysm0FgiYnqvEE7mXPMV5yP3MxQ8hppEgRChSr43WfBrWotEJiAzJLWYJsyHCKyVZakGpVkW2GqqzClicnrldJAlUUl89ZLoUlQeGjEK+dKbeERWrOqwsjt8xG1acaupcuCOYAdwTC58Hfg+f+yZKW6cPR+VdBFssPsvv5VRt/3SfrtBv23f9J971NHCsVY+DR03qlfaVAktAJsh2rGCNLpCKCeN/TFANSMtF46otIRTa4jbS0OFiBBnWo5lL9ovpnFraDGQ9fCYzUkfd02BSj6ZLgJeqQPL99uxI/VO53HYx7xABM9yxyOQDY7PGJRvaEtC/8UZ7KC4bSzQhxXnw==</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <fed:TokenTypesOffered>
+      <fed:TokenType Uri="urn:oasis:names:tc:SAML:2.0:assertion" />
+      <fed:TokenType Uri="urn:oasis:names:tc:SAML:1.0:assertion" />
+    </fed:TokenTypesOffered>
+    <fed:SecurityTokenServiceEndpoint>
+      <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+        <Address>https://fedsvc-stage.pwc.com/visae/VISActiveEndpoint.svc/usernamemixed</Address>
+      </EndpointReference>
+    </fed:SecurityTokenServiceEndpoint>
+    <fed:PassiveRequestorEndpoint>
+      <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+        <Address>https://fedsvc-stage.pwc.com/ofiss/</Address>
+      </EndpointReference>
+    </fed:PassiveRequestorEndpoint>
+    <fed:ClaimTypesOffered>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/authlevel" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">authlevel</auth>
+        <auth xmlns="Description">authlevel</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/cloudemailaddress" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">cloudemailaddress</auth>
+        <auth xmlns="Description">cloudemailaddress</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/claims/commonname" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">commonname</auth>
+        <auth xmlns="Description">commonname</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">emailaddress</auth>
+        <auth xmlns="Description">emailaddress</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">givenname</auth>
+        <auth xmlns="Description">givenname</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">name</auth>
+        <auth xmlns="Description">name</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/pwcpreferredmail" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">NameID</auth>
+        <auth xmlns="Description">NameID</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/pwcguid" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">pwcguid</auth>
+        <auth xmlns="Description">pwcguid</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/pwcpartyid" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">pwcpartyid</auth>
+        <auth xmlns="Description">pwcpartyid</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">role</auth>
+        <auth xmlns="Description">role</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">surname</auth>
+        <auth xmlns="Description">surname</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">windowsaccountname</auth>
+        <auth xmlns="Description">windowsaccountname</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/pwcusertype" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">pwcUserType</auth>
+        <auth xmlns="Description">pwcUserType</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">PrivatePersonalID</auth>
+        <auth xmlns="Description">PrivatePersonalID</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/liveid/federation/2008/05/immutableid" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">immutableid</auth>
+        <auth xmlns="Description">immutableid</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">authenticationinstant</auth>
+        <auth xmlns="Description">authenticationinstant</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/lineofservice" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">lineofservice</auth>
+        <auth xmlns="Description">lineofservice</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/officephone" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">officephone</auth>
+        <auth xmlns="Description">officephone</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/organization" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">organization</auth>
+        <auth xmlns="Description">organization</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">country</auth>
+        <auth xmlns="Description">country</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/locality" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">locality</auth>
+        <auth xmlns="Description">locality</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/stateorprovince" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">stateorprovince</auth>
+        <auth xmlns="Description">stateorprovince</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/middlename" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">MiddleName</auth>
+        <auth xmlns="Description">MiddleName</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/employeeid" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">employeeid</auth>
+        <auth xmlns="Description">employeeid</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/employeetype" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">employee type</auth>
+        <auth xmlns="Description">employee type</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">UPN</auth>
+        <auth xmlns="Description">UPN</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/pwclocationcode" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">pwclocationcode</auth>
+        <auth xmlns="Description">pwclocationcode</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</auth>
+        <auth xmlns="Description">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/authtype" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">AuthType</auth>
+        <auth xmlns="Description">AuthType</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/pwcidentifier" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">PwCIdentifier</auth>
+        <auth xmlns="Description">PwCIdentifier</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">PrimarySID</auth>
+        <auth xmlns="Description">PrimarySID</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/office/2012/01/nameidissuer" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.microsoft.com/office/2012/01/nameidissuer</auth>
+        <auth xmlns="Description">http://schemas.microsoft.com/office/2012/01/nameidissuer</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/sharepoint/2009/08/claims/identityprovider" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.microsoft.com/sharepoint/2009/08/claims/identityprovider</auth>
+        <auth xmlns="Description">http://schemas.microsoft.com/sharepoint/2009/08/claims/identityprovider</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/sharepoint/2009/08/claims/userid" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.microsoft.com/sharepoint/2009/08/claims/userid</auth>
+        <auth xmlns="Description">http://schemas.microsoft.com/sharepoint/2009/08/claims/userid</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod</auth>
+        <auth xmlns="Description">http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.optimalidm.com/claims/costcenter" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.optimalidm.com/claims/costcenter</auth>
+        <auth xmlns="Description">http://schemas.optimalidm.com/claims/costcenter</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.optimalidm.com/claims/deladmindn" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.optimalidm.com/claims/deladmindn</auth>
+        <auth xmlns="Description">http://schemas.optimalidm.com/claims/deladmindn</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.optimalidm.com/claims/dn" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.optimalidm.com/claims/dn</auth>
+        <auth xmlns="Description">http://schemas.optimalidm.com/claims/dn</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/pwcidentityassurancelevel" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/pwcidentityassurancelevel</auth>
+        <auth xmlns="Description">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/pwcidentityassurancelevel</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://application.com" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://application.com</auth>
+        <auth xmlns="Description">http://application.com</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://openid.net/email" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://openid.net/email</auth>
+        <auth xmlns="Description">http://openid.net/email</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://openid.net/family_name" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://openid.net/family_name</auth>
+        <auth xmlns="Description">http://openid.net/family_name</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://openid.net/given_name" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://openid.net/given_name</auth>
+        <auth xmlns="Description">http://openid.net/given_name</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/identity/claims/objectidentifier" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.microsoft.com/identity/claims/objectidentifier</auth>
+        <auth xmlns="Description">http://schemas.microsoft.com/identity/claims/objectidentifier</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/pwcnotesdnabbreviated" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">http://schemas.pwc.com/identity/claims/pwcnotesdnabbreviated</auth>
+        <auth xmlns="Description">http://schemas.pwc.com/identity/claims/pwcnotesdnabbreviated</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/company" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">organization</auth>
+        <auth xmlns="Description">organization</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/pwcjobtitle" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">PwCJobTitle</auth>
+        <auth xmlns="Description">PwCJobTitle</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/pwcstaffclass" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">PwCStaffClass</auth>
+        <auth xmlns="Description">PwCStaffClass</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upwcstaffclass" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">upwcstaffclass</auth>
+        <auth xmlns="Description">upwcstaffclass</auth>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.pwc.com/identity/claims/pwcsubloscode1" Optional="True" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth xmlns="DisplayName">pwcsubloscode1</auth>
+        <auth xmlns="Description">pwcsubloscode1</auth>
+      </auth:ClaimType>
+    </fed:ClaimTypesOffered>
+  </RoleDescriptor>
+  <SPSSODescriptor WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://fedsvc-stage.pwc.com/ofiss/" />
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://fedsvc-stage.pwc.com/ofiss/" index="0" isDefault="true" />
+    <KeyDescriptor use="encryption">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIC5TCCAc2gAwIBAgIQHMHScLtAPKhNJL8oEadDqDANBgkqhkiG9w0BAQUFADAaMRgwFgYDVQQDEw9PRklTU2lnbmluZ0NlcnQwHhcNMTQwODI3MTM0NTIzWhcNMjAwMjE3MTM0NTIzWjAaMRgwFgYDVQQDEw9PRklTU2lnbmluZ0NlcnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3CUhZzRVxThfD6smcRASzZVN9Itjwvsj+4KyjFqgioTnyc1fo2CszWDOVEP4KJb0Qb7KnDneq3E7yK9uXV9WV7HCyOOtqIxfD4jrGBBy89NmyzFQy7HRumFvSORXOWHmGUK+UT/wyZsYYhq1gAsuuZdrGWVrffaI1Oo+/WpoGh7bhLcHADINiWbHO1YC2YnGgzjlJpWz7fN2bn1oQhBplOHcEOLBl6Kl7Qg447Zl71EVHT1uTmw+uQYp95+23xauZkT6nMl9QgOprqwp71ftB6zqVNyWcswwHNtcLYH86Je7ab1V+SGmqrj7ko/zCUuLpNG4byxPPvKXC9YBX8BPvAgMBAAGjJzAlMBMGA1UdJQQMMAoGCCsGAQUFBwMBMA4GA1UdDwQHAwUAsAAAADANBgkqhkiG9w0BAQUFAAOCAQEAUjysm0FgiYnqvEE7mXPMV5yP3MxQ8hppEgRChSr43WfBrWotEJiAzJLWYJsyHCKyVZakGpVkW2GqqzClicnrldJAlUUl89ZLoUlQeGjEK+dKbeERWrOqwsjt8xG1acaupcuCOYAdwTC58Hfg+f+yZKW6cPR+VdBFssPsvv5VRt/3SfrtBv23f9J971NHCsVY+DR03qlfaVAktAJsh2rGCNLpCKCeN/TFANSMtF46otIRTa4jbS0OFiBBnWo5lL9ovpnFraDGQ9fCYzUkfd02BSj6ZLgJeqQPL99uxI/VO53HYx7xABM9yxyOQDY7PGJRvaEtC/8UZ7KC4bSzQhxXnw==</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+  </SPSSODescriptor>
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIC5TCCAc2gAwIBAgIQHMHScLtAPKhNJL8oEadDqDANBgkqhkiG9w0BAQUFADAaMRgwFgYDVQQDEw9PRklTU2lnbmluZ0NlcnQwHhcNMTQwODI3MTM0NTIzWhcNMjAwMjE3MTM0NTIzWjAaMRgwFgYDVQQDEw9PRklTU2lnbmluZ0NlcnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3CUhZzRVxThfD6smcRASzZVN9Itjwvsj+4KyjFqgioTnyc1fo2CszWDOVEP4KJb0Qb7KnDneq3E7yK9uXV9WV7HCyOOtqIxfD4jrGBBy89NmyzFQy7HRumFvSORXOWHmGUK+UT/wyZsYYhq1gAsuuZdrGWVrffaI1Oo+/WpoGh7bhLcHADINiWbHO1YC2YnGgzjlJpWz7fN2bn1oQhBplOHcEOLBl6Kl7Qg447Zl71EVHT1uTmw+uQYp95+23xauZkT6nMl9QgOprqwp71ftB6zqVNyWcswwHNtcLYH86Je7ab1V+SGmqrj7ko/zCUuLpNG4byxPPvKXC9YBX8BPvAgMBAAGjJzAlMBMGA1UdJQQMMAoGCCsGAQUFBwMBMA4GA1UdDwQHAwUAsAAAADANBgkqhkiG9w0BAQUFAAOCAQEAUjysm0FgiYnqvEE7mXPMV5yP3MxQ8hppEgRChSr43WfBrWotEJiAzJLWYJsyHCKyVZakGpVkW2GqqzClicnrldJAlUUl89ZLoUlQeGjEK+dKbeERWrOqwsjt8xG1acaupcuCOYAdwTC58Hfg+f+yZKW6cPR+VdBFssPsvv5VRt/3SfrtBv23f9J971NHCsVY+DR03qlfaVAktAJsh2rGCNLpCKCeN/TFANSMtF46otIRTa4jbS0OFiBBnWo5lL9ovpnFraDGQ9fCYzUkfd02BSj6ZLgJeqQPL99uxI/VO53HYx7xABM9yxyOQDY7PGJRvaEtC/8UZ7KC4bSzQhxXnw==</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://fedsvc-stage.pwc.com/ofiss/" />
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://fedsvc-stage.pwc.com/ofiss/" />
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://fedsvc-stage.pwc.com/ofiss/" />
+  </IDPSSODescriptor>
+</EntityDescriptor>
