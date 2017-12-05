@@ -11,3 +11,11 @@ git clone https://github.com/tmschbgr/NodePassportExample.git
 # install dependencies
 npm install
 
+# create environment variables
+create .env file and set the following variables
+PASSPORT_ENTRYPOINT=XX
+PASSPORT_ISSUER=XX
+CLAIM_GUID=XX
+CLAIM_EMAIL=XX
+CLAIM_NAME=XX
+
