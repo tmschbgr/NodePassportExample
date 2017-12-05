@@ -21,25 +21,29 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  name: 'app',
-  data () {
+  name: "app",
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      msg2: ''
-    }
+      msg: "Welcome to Your Vue.js App",
+      msg2: ""
+    };
   },
   created() {
-    console.log('created')
-    this.$http.get('http://localhost:3000/api/test').then(response => this.msg2 = response).catch(err => this.msg2 = response)
+    console.log("created");
+    axios
+      .get("http://localhost:3000/api/user")
+      .then(response => (this.msg2 = response))
+      .catch(err => (this.msg2 = response));
   }
-
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -47,7 +51,8 @@ export default {
   margin-top: 60px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 
